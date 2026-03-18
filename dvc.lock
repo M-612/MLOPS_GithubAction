@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+    - path: data/data.txt
+      hash: md5
+      md5: 130ba7b7d77efca0d8ce1f33f8c52ea5
+      size: 37
+    - path: preprocess.py
+      hash: md5
+      md5: cbffb8cf867a3bc166b97cad5bec224e
+      size: 272
+    outs:
+    - path: data/processed.txt
+      hash: md5
+      md5: ac2a661aeaeba9442a63df70baf1a735
+      size: 37
